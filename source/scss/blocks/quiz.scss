@@ -1,5 +1,7 @@
 .quiz__wrapper {
-  width: 280px;
+  width: 100%;
+  min-width: 280px;
+  max-width: 600px;
   padding: 20px 10px;
   background: linear-gradient(to bottom right, #660979, #00d4ff);
   border-radius: 8px;
