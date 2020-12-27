@@ -1,0 +1,86 @@
+.quiz__wrapper {
+  width: 280px;
+  padding: 20px 10px;
+  background: linear-gradient(to bottom right, #660979, #00d4ff);
+  border-radius: 8px;
+
+  @media (min-width: $tablet) {
+    width: 600px;
+  }
+}
+
+.quiz__question {
+  @include reset-text;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.quiz__answers-list {
+  @include reset-list;
+  margin-bottom: 30px;
+}
+
+.quiz__answers-item {
+  position: relative;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.quiz__answer {
+  @include reset-button;
+  padding: 10px 5px;
+  width: 100%;
+  text-align: left;
+  color: white;
+  font-size: 14px;
+  background-color: rgba(255,255,255, 0.3);
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: rgba(255,255,255, 0.2);
+  }
+
+  @media (min-width: $tablet) {
+    padding: 10px 10px;
+  }
+}
+
+.quiz__voting-counter {
+  @include reset-text;
+  text-align: center;
+  font-size: 16px;
+  color: $white;
+}
+
+.quiz__progress {
+  width: 100%;
+}
+
+.quiz__progress-percents {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  text-align: center;
+  color: white;
+}
+
+progress {
+  height: 35px;
+  border-radius: 5px;
+  background: $white;
+  opacity: 0.4;
+
+  &::-webkit-progress-value {
+    background-color: $white;
+    border-radius: 5px;
+  }
+}

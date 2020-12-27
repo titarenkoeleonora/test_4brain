@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>test 4brain</title>
+  </head>
+  <body>
+    <main>
+      <section class="quiz">
+        <div class="container">
+          <div class="quiz__wrapper">
+            <p class="quiz__question">Кто Вы?</p>
+            <ul class="quiz__answers-list">
+              <li class="quiz__answers-item">
+                <button class="quiz__answer" type="button" id="first-answer" aria-label="Экстраверт">Экстраверт</button>
+                <progress class="quiz__progress visually-hidden" value="30" max="100"></progress>
+                <span class="quiz__progress-percents visually-hidden">0%</span>
+              </li>
+              <li class="quiz__answers-item">
+                <button class="quiz__answer" type="button" id="second-answer" aria-label="Интраверт">Интраверт</button>
+                <progress class="quiz__progress visually-hidden" value="0" max="100"></progress>
+                <span class="quiz__progress-percents visually-hidden">0%</span>
+              </li>
+              <li class="quiz__answers-item">
+                <button class="quiz__answer" type="button" id="third-answer" aria-label="Не знаю">Не знаю</button>
+                <progress class="quiz__progress visually-hidden" value="0" max="100"></progress>
+                <span class="quiz__progress-percents visually-hidden">0%</span>
+              </li>
+            </ul>
+            <p class="quiz__voting-counter">
+              Проголосовали <span class="quiz__count">8</span> человек
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
